@@ -1,0 +1,38 @@
+<div class="container-fluid justify-content-center">
+    <div class="row container">
+        <div class="col"> &nbsp; </div>
+    </div>
+    <div class="row container mx-auto">
+        <div class="col bg-white">
+            <p class="text-start fs-5">Consultas de Clientes</p>
+             <p class="text-secondary">Prova de Lab DSM</p>
+            <p>
+            <div class="container text-center" >
+                <div class="row bg-primary ">
+                    <div class="col py-2 text-light" style="background: #6f42c1;">
+                        Nome </div>
+                    <div class="col py-2 text-light" style="background: #6f42c1;">
+                        Endereço </div>
+                    <div class="col py-2 text-light" style="background: #6f42c1;">
+                        Bairro </div>
+                    <div class="col py-2 text-light" style="background: #6f42c1;"> Ações
+                    </div>
+                </div>
+                {{#each posts}}
+                {{#dataValues}}
+                <div class="row border align-items-center">
+                    <div class="col py-2 text-blue"> {{nome}} </div>
+                    <div class="col py-2 text-blue"> {{endereco}} </div>
+                    <div class="col py-2 text-blue"> {{bairro}} </div>
+                    <div class="col py-2 text-blue">
+                        <a href="/editar/{{id}}" class="btn btn-primary" style="background: #6f42c1;">Editar</a>
+                        <a href="/excluir/{{id}}" class="btn btn-danger">Excluir</a>
+                    </div>
+                </div>
+                {{/dataValues}}
+                {{/each}}
+            </div>
+            </p>
+        </div>
+
+    </div>

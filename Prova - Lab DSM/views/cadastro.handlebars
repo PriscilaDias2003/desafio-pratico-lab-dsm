@@ -1,0 +1,45 @@
+<div class="container-fluid">
+    <form action="/cadastrar" method="post" class="container mt-4">
+        <div class="mb-4 text-start">
+            <h2 style="color: #6f42c1;">Cadastro de Cliente</h2>
+            <p class="text-secondary">Prova de Lab DSM</p>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="nome" class="form-label">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome">
+            </div>
+            <div class="col-md-6">
+                <label for="endereco" class="form-label">Endereço:</label>
+                <input type="text" class="form-control" id="endereco" name="endereco">
+            </div>
+            <div class="col-md-4">
+                <label for="bairro" class="form-label">Bairro:</label>
+                <input type="text" class="form-control" id="bairro" name="bairro">
+            </div>
+            <div class="col-md-4">
+                <label for="cidade" class="form-label">Cidade:</label>
+                <input type="text" class="form-control" id="cidade" name="cidade">
+            </div>
+            <div class="col-md-4">
+                <label for="estado" class="form-label">Estado:</label>
+                <input type="text" class="form-control" id="estado" name="estado">
+            </div>
+            <div class="col-md-4">
+                <label for="CEP" class="form-label">CEP:</label>
+                <input type="number" class="form-control" id="CEP" name="cep">
+            </div>
+            <div class="col-md-4">
+                <label for="telefone" class="form-label">Telefone:</label>
+                <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(00) 0000-0000">
+            </div>
+            <div class="col-md-4">
+                <label for="celular" class="form-label">Celular:</label>
+                <input type="tel" class="form-control" id="celular" name="celular" placeholder="(00) 00000-0000">
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto mt-3">
+                <button type="submit" class="btn btn-primary" style="background-color: #6f42c1;">Cadastrar</button>
+            </div>
+        </div>
+    </form>
+</div>
